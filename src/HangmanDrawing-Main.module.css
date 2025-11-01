@@ -1,0 +1,36 @@
+:root {
+  --color-gallows: #706b65;
+}
+
+.container {
+  position: relative;
+}
+
+.gallowsBase {
+  width: 250px;
+  height: 10px;
+  background: var(--color-gallows);
+}
+
+.gallowsRodVertical {
+  width: 10px;
+  height: 400px;
+  background: var(--color-gallows);
+  margin-left: 120px;
+}
+
+.gallowsRodHorizontal {
+  width: 200px;
+  height: 10px;
+  background: var(--color-gallows);
+  margin-left: 120px;
+}
+
+.gallowsRope {
+  width: 10px;
+  height: 50px;
+  background: var(--color-gallows);
+  position: absolute;
+  top: 0;
+  right: 0;
+}

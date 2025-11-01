@@ -1,3 +1,4 @@
+import styles_Main from './HangmanDrawing-Main.module.css';
 import styles_BodyParts from './HangmanDrawing-BodyParts.module.css';
 
 const HEAD = <div key={0} className={styles_BodyParts.head} />;
@@ -15,45 +16,12 @@ type HangmanDrawingProps = {
 
 export function HangmanDrawing({numberOfGuesses}: HangmanDrawingProps) {
   return (
-    <div
-      style={{
-        position: 'relative'
-      }}
-    >
+    <div className={styles_Main.container}>
+      <div className={styles_Main.gallowsRope} />
+      <div className={styles_Main.gallowsRodHorizontal} />
+      <div className={styles_Main.gallowsRodVertical} />
+      <div className={styles_Main.gallowsBase} />
       {BODY_PARTS.slice(0, numberOfGuesses)}
-      <div
-        style={{
-          width: '10px',
-          height: '50px',
-          background: 'black',
-          position: 'absolute',
-          top: 0,
-          right: 0
-        }}
-      />
-      <div
-        style={{
-          width: '200px',
-          height: '10px',
-          background: 'black',
-          marginLeft: '120px'
-        }}
-      />
-      <div
-        style={{
-          width: '10px',
-          height: '400px',
-          background: 'black',
-          marginLeft: '120px'
-        }}
-      />
-      <div
-        style={{
-          width: '250px',
-          height: '10px',
-          background: 'black'
-        }}
-      />
     </div>
   );
 }
