@@ -1,11 +1,11 @@
-import styles from './HangmanDrawing.module.css';
+import styles_BodyParts from './HangmanDrawing-BodyParts.module.css';
 
-const HEAD = <div key={0} className={styles.head} />;
-const BODY = <div key={1} className={styles.body} />;
-const RIGHT_ARM = <div key={2} className={styles.rightArm} />;
-const LEFT_ARM = <div key={3} className={styles.leftArm} />;
-const RIGHT_LEG = <div key={4} className={styles.rightLeg} />;
-const LEFT_LEG = <div key={5} className={styles.leftLeg} />;
+const HEAD = <div key={0} className={styles_BodyParts.head} />;
+const BODY = <div key={1} className={styles_BodyParts.body} />;
+const RIGHT_ARM = <div key={2} className={styles_BodyParts.rightArm} />;
+const LEFT_ARM = <div key={3} className={styles_BodyParts.leftArm} />;
+const RIGHT_LEG = <div key={4} className={styles_BodyParts.rightLeg} />;
+const LEFT_LEG = <div key={5} className={styles_BodyParts.leftLeg} />;
 
 const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG];
 
