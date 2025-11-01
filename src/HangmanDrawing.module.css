@@ -17,11 +17,15 @@
   right: 0;
 }
 
-.rightArm {
+.limb {
   width: 100px;
   height: 10px;
   background: black;
   position: absolute;
+}
+
+.rightArm {
+  composes: limb;
   top: 150px;
   right: -100px;
   rotate: -30deg;
@@ -29,10 +33,7 @@
 }
 
 .leftArm {
-  width: 100px;
-  height: 10px;
-  background: black;
-  position: absolute;
+  composes: limb;
   top: 150px;
   right: 10px;
   rotate: 30deg;
@@ -40,10 +41,7 @@
 }
 
 .rightLeg {
-  width: 100px;
-  height: 10px;
-  background: black;
-  position: absolute;
+  composes: limb;
   top: 210px;
   right: -90px;
   rotate: 60deg;
@@ -51,10 +49,7 @@
 }
 
 .leftLeg {
-  width: 100px;
-  height: 10px;
-  background: black;
-  position: absolute;
+  composes: limb;
   top: 210px;
   right: 0;
   rotate: -60deg;
